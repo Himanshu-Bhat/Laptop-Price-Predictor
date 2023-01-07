@@ -1,5 +1,5 @@
-matplotlib==3.6.2
-numpy==1.24.1
-seaborn==0.12.2
-streamlit==1.16.0
+matplotlib
+numpy
+seaborn
+streamlit
 scikit-learn
