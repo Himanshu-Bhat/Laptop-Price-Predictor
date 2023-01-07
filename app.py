@@ -1,8 +1,9 @@
 import streamlit as st
-import pickle
 import numpy as np
 import seaborn as sns
 from matplotlib import pyplot as plt
+import pickle
+
 
 # ---- Laptop Price Predictor Home Page ----
 st.set_page_config(page_title="Laptop Price Predictor", page_icon="💻", layout="centered")
