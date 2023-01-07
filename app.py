@@ -112,7 +112,8 @@ else:
 
 if st.button('Predict Price'):
     query = np.array([ram, touchscreen, ips, cpu, gpu, os, company, type, weight, resolution, hdd, ssd]).reshape(1, 12)
-    result = f"The predicted price of this configuration is ₹ {format(int(np.exp(pipe.predict(query)[0])), ',d')}"
+    #result = f"The predicted price of this configuration is ₹ {format(int(np.exp(pipe.predict(query)[0])), ',d')}"
+    result = f"The predicted price of this configuration is ₹ {np.exp(pipe.predict(query)[0])}"
     text_style = f"<h1 style='font-family:Georgia, serif; text-align:center; color:#fada5e; font-size:20px;'>{result}</h1>"
     st.markdown(text_style, unsafe_allow_html=True)
 
